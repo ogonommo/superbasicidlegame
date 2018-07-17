@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game prototype</title>
+    <style media="screen">
+      div.buybuttons.disabled {
+        background-color: #111 !important;
+        color: #888 !important;
+      }
+    </style>
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
+  </head>
+  <body>
+<div style="width: 802px; margin: 0 auto;">
+  <div id="main" style="width: 578px; float: left; padding: 10px; border: 1px solid red;">
+    <h1 id="money">Money: 0</h1>
+    <div style="border: 1px solid black; margin-bottom: 2em;">
+      <div style="width: 50%; background-color: green; text-align: center; float: left; cursor: pointer; line-height: 3em;" id="start">START</div>
+      <div style="width: 50%; background-color: red; text-align: center; float: left; cursor: pointer; line-height: 3em;" id="stop">STOP</div>
+      <div style="width: 0px; clear: both;"></div>
+    </div>
+    <div class="buybuttons" id="buymoney" style="background-color: black; color: white; cursor: pointer; line-height: 2em; padding: 8px; width: 300px; margin: 5px;">Sell 1 qube</div>
+    <div class="buybuttons" id="buysalesmen" style="background-color: black; color: white; cursor: pointer; line-height: 2em; padding: 8px; width: 300px; margin: 5px;">Hire 1 salesmen</div>
+    <div class="buybuttons" id="buymanager" style="background-color: black; color: white; cursor: pointer; line-height: 2em; padding: 8px; width: 300px; margin: 5px;">Hire 1 manager</div>
+  </div>
+  <div id="sider" style="width: 178px; float: left; padding: 10px; border: 1px solid blue;">
+    <h3>Stats:</h3><br/>
+    <p id="sold">Sold: 0</p>
+    <p id="moneygen">Money generated: 0</p>
+    <p id="managers">Managers: 1</p>
+    <p id="salesmen">Salesmen: 0</p>
+    <p id="timespent">Time passes since game init: 0</p>
+  </div>
+  <div style="width: 0px; clear: both;"></div>
+</div>
+<script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
